@@ -9,8 +9,9 @@ import '../../domain/entities/app_user.dart';
 import '../../presentation/widgets/shared_widgets.dart';
 
 class InventoryFormPage extends StatefulWidget {
+  final AppUser currentUser;
   final InventoryItem? item;
-  const InventoryFormPage({super.key, this.item});
+  const InventoryFormPage({super.key, required this.currentUser, this.item});
   @override
   State<InventoryFormPage> createState() => _InventoryFormPageState();
 }

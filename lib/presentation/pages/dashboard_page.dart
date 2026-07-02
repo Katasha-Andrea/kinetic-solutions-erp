@@ -1827,7 +1827,7 @@ class _QuickActions extends StatelessWidget {
         icon: Icons.add_shopping_cart_outlined,
         color: AppTheme.primary700,
         bgColor: AppTheme.primary50,
-        page: const InventoryFormPage(),
+        page: InventoryFormPage(currentUser: currentUser),
         index: 1,
       ),
       _ActionItem(
